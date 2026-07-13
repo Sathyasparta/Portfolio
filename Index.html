@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sathya B | Business Central Developer</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#f5f7fb;
+color:#222;
+
+}
+
+/*=========================
+NAVBAR
+==========================*/
+
+nav{
+
+position:fixed;
+width:100%;
+background:white;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
+color:#0078D4;
+
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+
+}
+
+nav ul li{
+
+margin-left:30px;
+
+}
+
+nav ul li a{
+
+text-decoration:none;
+font-weight:500;
+color:#333;
+
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#0078D4;
+
+}
+
+/*====================
+HERO
+=====================*/
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:0 10%;
+
+}
+
+.left{
+
+flex:1;
+
+}
+
+.right{
+
+flex:1;
+text-align:center;
+
+}
+
+.right img{
+
+width:350px;
+
+border-radius:50%;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.hero h3{
+
+font-size:22px;
+
+color:#0078D4;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+margin:20px 0;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:30px;
+
+}
+
+.btn{
+
+padding:15px 40px;
+
+background:#0078D4;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:50px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#005ea8;
+
+}
+
+.social{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    margin-top:30px;
+}
+
+.social a{
+    width:55px;
+    height:55px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0078D4;
+    color:#fff;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:24px;
+    transition:0.3s ease;
+}
+
+.social a:hover{
+    background:#005fa3;
+    transform:translateY(-5px);
+}
+/*==========================
+SECTION TITLE
+==========================*/
+
+.section-title{
+
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#0078D4;
+
+}
+
+/*==========================
+ABOUT
+==========================*/
+
+.about{
+
+padding:100px 10%;
+background:white;
+
+}
+
+.container{
+
+max-width:1100px;
+margin:auto;
+
+}
+
+.about-text{
+
+font-size:18px;
+line-height:2;
+text-align:center;
+color:#555;
+
+}
+
+/*==========================
+STATISTICS
+==========================*/
+
+.stats{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+padding:80px 10%;
+
+background:#eef6ff;
+
+}
+
+.card{
+
+background:white;
+padding:35px;
+text-align:center;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card h2{
+
+font-size:45px;
+color:#0078D4;
+
+}
+
+.card p{
+
+margin-top:10px;
+font-size:18px;
+
+}
+
+/*==========================
+SKILLS
+==========================*/
+
+#skills{
+
+padding:100px 10%;
+background:white;
+
+}
+
+.skill{
+
+margin-bottom:30px;
+
+}
+
+.skill p{
+
+font-weight:600;
+margin-bottom:10px;
+
+}
+
+.progress{
+
+width:100%;
+height:28px;
+background:#ddd;
+border-radius:30px;
+overflow:hidden;
+
+}
+
+.bar{
+
+height:100%;
+background:#0078D4;
+color:white;
+text-align:right;
+padding-right:15px;
+line-height:28px;
+font-weight:bold;
+
+}
+/*=========================
+EXPERIENCE
+=========================*/
+
+.experience{
+
+padding:100px 10%;
+background:#eef6ff;
+
+}
+
+.timeline{
+
+max-width:1000px;
+
+margin:auto;
+
+}
+
+.timeline-content{
+
+background:white;
+
+padding:35px;
+
+border-left:6px solid #0078D4;
+
+border-radius:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.timeline-content h3{
+
+color:#0078D4;
+
+margin-bottom:10px;
+
+}
+
+.timeline-content h4{
+
+margin-bottom:10px;
+
+}
+
+.timeline-content span{
+
+color:gray;
+
+font-size:14px;
+
+}
+
+.timeline-content ul{
+
+margin-top:20px;
+
+padding-left:20px;
+
+}
+
+.timeline-content li{
+
+margin-bottom:12px;
+
+line-height:1.8;
+
+}
+
+/*=========================
+PROJECTS
+=========================*/
+
+#projects{
+
+padding:100px 10%;
+
+background:white;
+
+}
+
+.project-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.project-card{
+
+background:#f7f9fc;
+
+padding:35px;
+
+border-radius:15px;
+
+text-align:center;
+
+transition:.3s;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.project-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.project-card i{
+
+color:#0078D4;
+
+margin-bottom:25px;
+
+}
+
+.project-card h3{
+
+margin-bottom:20px;
+
+}
+
+.project-card p{
+
+line-height:1.8;
+
+color:#555;
+
+}
+/*=========================
+EDUCATION
+=========================*/
+
+.education{
+
+padding:100px 10%;
+background:#eef6ff;
+
+}
+
+.education-container{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+
+}
+
+.edu-card{
+
+background:white;
+padding:35px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.edu-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.edu-card i{
+
+font-size:50px;
+color:#0078D4;
+margin-bottom:20px;
+
+}
+
+.edu-card h3{
+
+margin-bottom:10px;
+color:#0078D4;
+
+}
+
+.edu-card h4{
+
+margin-bottom:15px;
+color:#444;
+
+}
+
+.edu-card p{
+
+margin:8px 0;
+line-height:1.8;
+color:#555;
+
+}
+.project-card ul{
+
+margin-top:20px;
+padding-left:20px;
+text-align:left;
+
+}
+
+.project-card li{
+
+margin-bottom:8px;
+color:#555;
+
+}
+
+.project-card{
+
+border-top:5px solid #0078D4;
+
+}
+/*=========================
+KEY RESPONSIBILITIES
+=========================*/
+
+#responsibilities{
+
+padding:100px 10%;
+background:#eef6ff;
+
+}
+
+.responsibility-card{
+
+max-width:900px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.item{
+
+display:flex;
+align-items:center;
+gap:15px;
+
+padding:18px 20px;
+
+margin-bottom:15px;
+
+background:#f8fbff;
+
+border-left:5px solid #0078D4;
+
+border-radius:10px;
+
+transition:.3s;
+
+}
+
+.item:last-child{
+
+margin-bottom:0;
+
+}
+
+.item:hover{
+
+transform:translateX(8px);
+background:#0078D4;
+color:white;
+
+}
+
+.item i{
+
+font-size:22px;
+color:#0078D4;
+min-width:25px;
+
+}
+
+.item:hover i{
+
+color:white;
+
+}
+
+.item span{
+
+font-size:17px;
+line-height:1.6;
+
+}
+/*=========================
+CONTACT
+=========================*/
+
+#contact{
+
+padding:100px 10%;
+background:white;
+
+}
+
+.contact-container{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+
+}
+
+.contact-info h3{
+
+font-size:32px;
+margin-bottom:20px;
+color:#0078D4;
+
+}
+
+.contact-info p{
+
+line-height:1.8;
+margin-bottom:30px;
+color:#555;
+
+}
+
+.info{
+
+display:flex;
+align-items:center;
+margin-bottom:20px;
+
+}
+
+.info i{
+
+width:45px;
+height:45px;
+background:#0078D4;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-right:15px;
+
+}
+
+.social-links{
+
+margin-top:30px;
+
+}
+
+.social-links a{
+
+width:50px;
+height:50px;
+background:#0078D4;
+color:white;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+margin-right:15px;
+text-decoration:none;
+transition:.3s;
+
+}
+
+.social-links a:hover{
+
+transform:translateY(-8px);
+
+}
+
+.contact-form{
+
+background:#f8fbff;
+padding:35px;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+width:100%;
+padding:15px;
+margin-bottom:20px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:16px;
+
+}
+
+.contact-form button{
+
+background:#0078D4;
+color:white;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-size:17px;
+transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+background:#005fa3;
+
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+Sathya B
+
+</div>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#skills">Skills</a></li>
+
+<li><a href="#projects">Projects</a></li>
+
+<li><a href="#experience">Experience</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Hi, I'm <span>Sathya B</span></h1>
+
+        <h2>Microsoft Dynamics 365 Business Central Developer</h2>
+
+        <p>
+            Business Central Developer with nearly 3 years of experience in
+            ERP customization, Warehouse Management System (WMS),
+            RDLC Reports, API Integrations, and Microsoft Azure.
+        </p>
+
+        <a href="resume/Sathya_B_Resume.pdf" class="btn" download>
+            <i class="fas fa-download"></i> Download Resume
+        </a>
+
+        <div class="social">
+
+            <a href="https://www.linkedin.com/in/sathya-b-90244b227/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+<a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+            <a href="mailto:sathyasparta4693@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="about" class="about">
+
+    <div class="container">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p class="about-text">
+            I am a Microsoft Dynamics 365 Business Central Developer with nearly
+            3 years of experience in developing ERP solutions using AL Language.
+
+            My expertise includes Warehouse Management System (WMS),
+            Supply Chain Management (SCM),
+            RDLC Report Development,
+            API Integration,
+            Production Support,
+            and Business Central Customization.
+
+            I enjoy solving complex business problems by building efficient,
+            scalable, and user-friendly ERP solutions.
+        </p>
+
+    </div>
+
+</section>
+<!-- =======================================
+EXPERIENCE
+======================================= -->
+
+<section id="experience" class="experience">
+
+    <h2 class="section-title">Experience</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-content">
+
+                <h3>Business Central Developer</h3>
+
+                <h4>The Direction Pte. Ltd. (Remote – Singapore)</h4>
+
+                <span>October 2023 – Present</span>
+
+                <ul>
+
+                    <li>Developed Microsoft Dynamics 365 Business Central solutions using AL Language.</li>
+
+                    <li>Customized Sales, Purchase, Inventory and Warehouse modules.</li>
+
+                    <li>Developed Warehouse Management customizations including Receipts, Put-aways, Picks and Shipments.</li>
+
+                    <li>Created RDLC Reports such as Packing Reports and Label Reports.</li>
+
+                    <li>Built API Pages for external integrations.</li>
+
+                    <li>Implemented WhatsApp and Autobot integrations using JSON.</li>
+
+                    <li>Provided production support and bug fixes.</li>
+
+                    <li>Worked with functional consultants and clients.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="responsibilities">
+
+    <h2 class="section-title">Key Responsibilities</h2>
+
+    <div class="responsibility-card">
+
+        <div class="item">
+            <i class="fas fa-check-circle"></i>
+            <span>Develop Business Central extensions using AL Language.</span>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-check-circle"></i>
+            <span>Customize Sales, Purchase, Inventory and Warehouse modules.</span>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-check-circle"></i>
+            <span>Create and maintain RDLC reports.</span>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-check-circle"></i>
+            <span>Develop API Pages and REST integrations.</span>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-check-circle"></i>
+            <span>Provide production support and resolve application issues.</span>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-check-circle"></i>
+            <span>Collaborate with functional consultants and project teams.</span>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-check-circle"></i>
+            <span>Guide end-users on ERP and Warehouse Management processes.</span>
+        </div>
+
+        <div class="item">
+            <i class="fas fa-check-circle"></i>
+            <span>Perform testing, deployment and system enhancements.</span>
+        </div>
+
+    </div>
+
+</section>
+<!-- =======================================
+PROJECTS
+======================================= -->
+
+<section id="projects">
+
+<h2 class="section-title">
+
+Projects
+
+</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+
+<i class="fas fa-warehouse fa-3x"></i>
+
+<h3>Warehouse Management</h3>
+
+<p>
+
+Developed warehouse customizations including Warehouse Receipts,
+Put-Away,
+Warehouse Picks,
+Warehouse Shipment
+and Inventory movement.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<i class="fab fa-whatsapp fa-3x"></i>
+
+<h3>WhatsApp Integration</h3>
+
+<p>
+
+Automated RFO page creation using JSON data received through
+WhatsApp and external systems.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<i class="fas fa-file-alt fa-3x"></i>
+
+<h3>RDLC Reports</h3>
+
+<p>
+
+Developed customized Packing Reports,
+Labels,
+Shipping Documents,
+Warehouse Reports
+and Customer Reports.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<i class="fas fa-code fa-3x"></i>
+
+<h3>API Integration</h3>
+
+<p>
+
+Created API Pages and integrated Business Central
+with external applications using REST APIs.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<i class="fas fa-cloud fa-3x"></i>
+
+<h3>Azure Integration</h3>
+
+<p>
+
+Learning Microsoft Azure Functions,
+App Services,
+and integrating Business Central with Azure.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<i class="fas fa-laptop-code fa-3x"></i>
+
+<h3>Custom Warehouse Interface</h3>
+
+<p>
+
+Developed Warehouse Interface using
+.NET and HTML
+to simplify Purchase Order
+and Pick operations.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- =========================
+EDUCATION
+========================= -->
+
+<section id="education" class="education">
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-container">
+
+        <div class="edu-card">
+
+            <i class="fas fa-graduation-cap"></i>
+
+            <h3>Bachelor of Engineering (B.E.)</h3>
+
+            <h4>Electronics and Instrumentation Engineering</h4>
+
+            <p><strong>Institution:</strong> Hindusthan College of Engineering and Technology</p>
+
+            <p><strong>Year of Passing:</strong> 2022</p>
+
+            <p><strong>CGPA:</strong> 8.44 / 10</p>
+
+        </div>
+
+        <div class="edu-card">
+
+            <i class="fas fa-school"></i>
+
+            <h3>Higher Secondary School Certificate (HSC)</h3>
+
+            <h4>Syed Ammal Matric Boys Higher Secondary School</h4>
+
+            <p><strong>Year of Passing:</strong> 2018</p>
+
+            <p><strong>Percentage:</strong> 75.58%</p>
+
+        </div>
+
+        <div class="edu-card">
+
+            <i class="fas fa-book"></i>
+
+            <h3>Secondary School Examination (SSLC)</h3>
+
+            <h4>Syed Ammal Matric Boys Higher Secondary School</h4>
+
+            <p><strong>Year of Passing:</strong> 2016</p>
+
+            <p><strong>Percentage:</strong> 93.40%</p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================
+PROFESSIONAL PROJECTS
+===================================== -->
+
+<section id="projects">
+
+    <h2 class="section-title">Professional Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+
+            <i class="fas fa-warehouse"></i>
+
+            <h3>Warehouse Management System</h3>
+
+            <p>
+                Developed Warehouse Management customizations in
+                Microsoft Dynamics 365 Business Central using AL.
+            </p>
+
+            <ul>
+                <li>Warehouse Receipts</li>
+                <li>Put-away</li>
+                <li>Warehouse Picks</li>
+                <li>Warehouse Shipment</li>
+                <li>Inventory Movement</li>
+            </ul>
+
+        </div>
+
+        <div class="project-card">
+
+            <i class="fab fa-whatsapp"></i>
+
+            <h3>WhatsApp Automation</h3>
+
+            <p>
+                Developed WhatsApp integration to automate
+                RFO page creation using JSON data.
+            </p>
+
+            <ul>
+                <li>JSON Processing</li>
+                <li>Business Central Integration</li>
+                <li>Automation</li>
+            </ul>
+
+        </div>
+
+        <div class="project-card">
+
+            <i class="fas fa-envelope"></i>
+
+            <h3>Email Purchase Order Automation</h3>
+
+            <p>
+                Automated Purchase Order creation by reading
+                Email, PDF and Excel attachments.
+            </p>
+
+            <ul>
+                <li>Email Integration</li>
+                <li>PDF Processing</li>
+                <li>Excel Import</li>
+            </ul>
+
+        </div>
+
+        <div class="project-card">
+
+            <i class="fas fa-file-alt"></i>
+
+            <h3>RDLC Report Development</h3>
+
+            <p>
+                Developed and customized reports for customers.
+            </p>
+
+            <ul>
+                <li>Packing List</li>
+                <li>Item Labels</li>
+                <li>Warehouse Reports</li>
+                <li>Sales Reports</li>
+            </ul>
+
+        </div>
+
+        <div class="project-card">
+
+            <i class="fas fa-plug"></i>
+
+            <h3>Business Central API Integration</h3>
+
+            <p>
+                Developed API Pages for integrating
+                Business Central with external systems.
+            </p>
+
+            <ul>
+                <li>REST APIs</li>
+                <li>JSON</li>
+                <li>API Pages</li>
+            </ul>
+
+        </div>
+
+        <div class="project-card">
+
+            <i class="fas fa-laptop-code"></i>
+
+            <h3>Warehouse Interface</h3>
+
+            <p>
+                Built a Warehouse Interface using
+                .NET and HTML to simplify warehouse operations.
+            </p>
+
+            <ul>
+                <li>.NET</li>
+                <li>HTML</li>
+                <li>Warehouse UI</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===================================
+CONTACT
+=================================== -->
+
+<section id="contact">
+
+    <h2 class="section-title">Get In Touch</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Let's Connect</h3>
+
+            <p>
+                I'm always interested in discussing Microsoft Dynamics 365 Business Central,
+                ERP development, integrations, and new opportunities.
+            </p>
+
+            <div class="info">
+
+                <i class="fas fa-envelope"></i>
+
+                <span>sathyasparta4693@gmail.com</span>
+
+            </div>
+
+            <div class="info">
+
+                <i class="fas fa-phone"></i>
+
+                <span>+91 7826827738</span>
+
+            </div>
+
+            <div class="info">
+
+                <i class="fas fa-map-marker-alt"></i>
+
+                <span>Tamil Nadu, India</span>
+
+            </div>
+
+            <div class="social-links">
+
+    <a href="https://www.linkedin.com/in/sathya-b-90244b227/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/Sathyasparta" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="mailto:sathyasparta4693@gmail.com">
+        <i class="fas fa-envelope"></i>
+    </a>
+
+</div>
+
+        </div>
+
+        <div class="contact-form">
+
+
+    <h3>Let's Work Together</h3>
+
+    <p>
+        If you'd like to discuss a Business Central opportunity,
+        ERP development, or collaboration, feel free to contact me.
+    </p>
+
+    <a href="mailto:sathyasparta4693@gmail.com" class="email-btn">
+        <i class="fas fa-envelope"></i>
+        Email Me
+    </a>
+
+</div>
+
+
+    </div>
+
+</section>
+</body>
+
+</html>
