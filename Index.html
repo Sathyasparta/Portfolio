@@ -763,6 +763,52 @@ transition:.3s;
 background:#005fa3;
 
 }
+/*=========================
+SKILLS
+=========================*/
+
+.skills{
+    padding:100px 10%;
+    background:#ffffff;
+}
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.skill-card{
+    background:#f8fbff;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #0078D4;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+}
+
+.skill-card i{
+    font-size:50px;
+    color:#0078D4;
+    margin-bottom:20px;
+}
+
+.skill-card h3{
+    margin-bottom:15px;
+    color:#0078D4;
+}
+
+.skill-card p{
+    color:#555;
+    line-height:1.8;
+    font-size:16px;
+}
 </style>
 
 </head>
@@ -795,7 +841,7 @@ Sathya B
 
 </nav>
 
-<section class="hero">
+<section id="home" class="hero">
 
     <div class="hero-content">
 
@@ -850,6 +896,87 @@ Sathya B
             I enjoy solving complex business problems by building efficient,
             scalable, and user-friendly ERP solutions.
         </p>
+
+    </div>
+
+</section>
+<!-- ===================================
+TECHNICAL SKILLS
+=================================== -->
+
+<section id="skills" class="skills">
+
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>ERP Development</h3>
+            <p>
+                AL Language<br>
+                Microsoft Dynamics 365 Business Central
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <h3>Programming</h3>
+            <p>
+                C#<br>
+                .NET<br>
+                HTML<br>
+                JavaScript
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-file-alt"></i>
+            <h3>Reporting</h3>
+            <p>
+                RDLC Reports<br>
+                Report Customization
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-plug"></i>
+            <h3>Integration</h3>
+            <p>
+                REST APIs<br>
+                JSON<br>
+                API Pages<br>
+                Postman
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud</h3>
+            <p>
+                Microsoft Azure
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-code-branch"></i>
+            <h3>Version Control & DevOps</h3>
+            <p>
+                Git<br>
+                GitHub<br>
+                GitHub Actions (CI/CD)
+
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <i class="fas fa-warehouse"></i>
+            <h3>Domain Expertise</h3>
+            <p>
+                Warehouse Management System (WMS)<br>
+                Supply Chain Management (SCM)
+            </p>
+        </div>
 
     </div>
 
